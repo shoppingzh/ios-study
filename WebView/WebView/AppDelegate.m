@@ -1,13 +1,13 @@
 //
 //  AppDelegate.m
-//  hello
+//  WebView
 //
 //  Created by dascomsoft on 2019/1/25.
 //  Copyright © 2019年 Littlezheng. All rights reserved.
 //
 
 #import "AppDelegate.h"
-#import "HelloUI.h"
+#import "WebViewUI.h"
 
 @interface AppDelegate ()
 
@@ -18,15 +18,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen]bounds]];
-    HelloUI* helloUI = [[HelloUI alloc]initWithNibName:@"HelloUI" bundle:nil];
-    self.window.rootViewController = helloUI;
+    self.window = [[UIWindow alloc] initWithFrame: [[UIScreen mainScreen]bounds]];
+    self.window.rootViewController = [[WebViewUI alloc]initWithNibName:@"WebViewUI" bundle:nil];
     [self.window makeKeyAndVisible];
-    self.window.windowLevel = UIWindowLevelNormal; // 设置窗口z轴级别
-    
-    // NSLog(@"%@", self.window.screen);
-    // NSLog(@"当前窗口是否为关键窗口：%d", self.window.isKeyWindow);
-    
     return YES;
 }
 
