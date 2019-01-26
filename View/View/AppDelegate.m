@@ -1,13 +1,13 @@
 //
 //  AppDelegate.m
-//  WebView
+//  View
 //
-//  Created by dascomsoft on 2019/1/25.
+//  Created by dascomsoft on 2019/1/26.
 //  Copyright © 2019年 Littlezheng. All rights reserved.
 //
 
 #import "AppDelegate.h"
-#import "WebViewUI.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -18,10 +18,37 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    self.window = [[UIWindow alloc] initWithFrame: [[UIScreen mainScreen]bounds]];
-    self.window.rootViewController = [[WebViewUI alloc]initWithNibName:@"WebViewUI" bundle:nil];
+    self.window = [[UIWindow alloc] initWithFrame: [[UIScreen mainScreen] bounds]];
+    self.window.rootViewController = [[ViewController alloc]init];
+    self.window.backgroundColor = [UIColor whiteColor];
     
+    CGRect r = {100, 100, 200, 200};
+    UIView *v = [[UIView alloc]initWithFrame:r];
+    // 背景色
+    v.backgroundColor = [UIColor purpleColor];
+    // 可见性
+    NSLog(@"视图是否可见：%@", v.isHidden ? @"否" : @"是");
+    // 透明度
+    v.alpha = 0.6;
+    NSLog(@"视图透明度：%f", v.alpha);
+    // 是否为不透明的
+    NSLog(@"是否不透明：%@", v.isOpaque ? @"是" : @"否");
+    // 色调
+    v.tintColor = [UIColor blueColor];
+    NSLog(@"视图色调：%@", v.tintColor);
+    // 是否受限与父视图边界
+    v.clipsToBounds = YES;
+    NSLog(@"是否受限于父视图边界：%@", v.clipsToBounds ? @"是" : @"否");
     
+    // 事件相关
+    // 是否响应用户事件
+    NSLog(@"是否响应用户事件：%@", v.isUserInteractionEnabled ? @"是" : @"否");
+    // 是否同时可响应多个触摸事件
+    NSLog(@"是否同时可响应多个触摸事件：%@", v.isMultipleTouchEnabled ? @"是" : @"否");
+    // 是否阻止事件冒泡
+    NSLog(@"是否阻止事件冒泡：%@", v.isExclusiveTouch ? @"是" : @"否");
+    
+    [self.window addSubview:v];
     [self.window makeKeyAndVisible];
     return YES;
 }

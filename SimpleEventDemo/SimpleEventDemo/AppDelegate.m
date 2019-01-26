@@ -1,13 +1,13 @@
 //
 //  AppDelegate.m
-//  WebView
+//  SimpleEventDemo
 //
-//  Created by dascomsoft on 2019/1/25.
+//  Created by dascomsoft on 2019/1/26.
 //  Copyright © 2019年 Littlezheng. All rights reserved.
 //
 
 #import "AppDelegate.h"
-#import "WebViewUI.h"
+#import "MainUI.h"
 
 @interface AppDelegate ()
 
@@ -18,11 +18,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    self.window = [[UIWindow alloc] initWithFrame: [[UIScreen mainScreen]bounds]];
-    self.window.rootViewController = [[WebViewUI alloc]initWithNibName:@"WebViewUI" bundle:nil];
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.rootViewController = [[MainUI alloc]initWithNibName:@"MainUI" bundle:nil];
     
     
     [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
