@@ -26,19 +26,17 @@
     
     // tab 1
     HomeUI *homeUI = [[HomeUI alloc] initWithNibName:@"HomeUI" bundle:nil];
-    homeUI.title = @"主页";
+    homeUI.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"主页" image:[UIImage imageNamed:@"home"] tag:0];
     
     // tab 2
     WebViewUI *wvUI = [[WebViewUI alloc]init];
-    wvUI.title = @"浏览器";
-    
+    wvUI.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"浏览器" image:[UIImage imageNamed:@"ex"] tag:1];
     
     tbVc.viewControllers = @[homeUI, wvUI];
     
-    
+    // tab bar栏样式修改
     UITabBar *tb =  tbVc.tabBar;
-    tb.backgroundColor = [UIColor cyanColor];
-    tb.tintColor = [UIColor blackColor];
+    tb.tintColor = [UIColor purpleColor];
     
     self.window.rootViewController = tbVc;
     [self.window makeKeyAndVisible];
