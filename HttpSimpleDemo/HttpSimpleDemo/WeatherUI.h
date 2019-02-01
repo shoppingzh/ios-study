@@ -11,5 +11,11 @@
 @interface WeatherUI : UIViewController
 
 @property NSString *city;
+@property (weak, nonatomic) IBOutlet UILabel *typeLb;
+@property (weak, nonatomic) IBOutlet UILabel *temLb;
+@property (weak, nonatomic) IBOutlet UILabel *maxTemLb;
+@property (weak, nonatomic) IBOutlet UILabel *minTemLb;
+@property (weak, nonatomic) IBOutlet UILabel *wingLb;
+@property (weak, nonatomic) IBOutlet UILabel *sickLb;
 
 @end
