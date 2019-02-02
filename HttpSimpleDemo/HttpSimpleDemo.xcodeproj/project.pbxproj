@@ -31,6 +31,28 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		211512A62204494700D181BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		211512A72204494700D181BC /* MJExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJExtension.h; sourceTree = "<group>"; };
+		211512A82204494700D181BC /* MJExtensionConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJExtensionConst.h; sourceTree = "<group>"; };
+		211512A92204494700D181BC /* MJExtensionConst.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJExtensionConst.m; sourceTree = "<group>"; };
+		211512AA2204494700D181BC /* MJFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJFoundation.h; sourceTree = "<group>"; };
+		211512AB2204494700D181BC /* MJFoundation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJFoundation.m; sourceTree = "<group>"; };
+		211512AC2204494700D181BC /* MJProperty.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJProperty.h; sourceTree = "<group>"; };
+		211512AD2204494700D181BC /* MJProperty.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJProperty.m; sourceTree = "<group>"; };
+		211512AE2204494700D181BC /* MJPropertyKey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJPropertyKey.h; sourceTree = "<group>"; };
+		211512AF2204494700D181BC /* MJPropertyKey.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJPropertyKey.m; sourceTree = "<group>"; };
+		211512B02204494700D181BC /* MJPropertyType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJPropertyType.h; sourceTree = "<group>"; };
+		211512B12204494700D181BC /* MJPropertyType.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJPropertyType.m; sourceTree = "<group>"; };
+		211512B22204494700D181BC /* NSObject+MJClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJClass.h"; sourceTree = "<group>"; };
+		211512B32204494700D181BC /* NSObject+MJClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJClass.m"; sourceTree = "<group>"; };
+		211512B42204494700D181BC /* NSObject+MJCoding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJCoding.h"; sourceTree = "<group>"; };
+		211512B52204494700D181BC /* NSObject+MJCoding.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJCoding.m"; sourceTree = "<group>"; };
+		211512B62204494700D181BC /* NSObject+MJKeyValue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJKeyValue.h"; sourceTree = "<group>"; };
+		211512B72204494700D181BC /* NSObject+MJKeyValue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJKeyValue.m"; sourceTree = "<group>"; };
+		211512B82204494700D181BC /* NSObject+MJProperty.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJProperty.h"; sourceTree = "<group>"; };
+		211512B92204494700D181BC /* NSObject+MJProperty.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJProperty.m"; sourceTree = "<group>"; };
+		211512BA2204494700D181BC /* NSString+MJExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+MJExtension.h"; sourceTree = "<group>"; };
+		211512BB2204494700D181BC /* NSString+MJExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+MJExtension.m"; sourceTree = "<group>"; };
 		211F60E1220325F300A3A596 /* HttpSimpleDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HttpSimpleDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		211F60E4220325F300A3A596 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		211F60E5220325F300A3A596 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -82,11 +104,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		211512A42204494700D181BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				211512A52204494700D181BC /* MJExtension */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		211512A52204494700D181BC /* MJExtension */ = {
+			isa = PBXGroup;
+			children = (
+				211512A62204494700D181BC /* Info.plist */,
+				211512A72204494700D181BC /* MJExtension.h */,
+				211512A82204494700D181BC /* MJExtensionConst.h */,
+				211512A92204494700D181BC /* MJExtensionConst.m */,
+				211512AA2204494700D181BC /* MJFoundation.h */,
+				211512AB2204494700D181BC /* MJFoundation.m */,
+				211512AC2204494700D181BC /* MJProperty.h */,
+				211512AD2204494700D181BC /* MJProperty.m */,
+				211512AE2204494700D181BC /* MJPropertyKey.h */,
+				211512AF2204494700D181BC /* MJPropertyKey.m */,
+				211512B02204494700D181BC /* MJPropertyType.h */,
+				211512B12204494700D181BC /* MJPropertyType.m */,
+				211512B22204494700D181BC /* NSObject+MJClass.h */,
+				211512B32204494700D181BC /* NSObject+MJClass.m */,
+				211512B42204494700D181BC /* NSObject+MJCoding.h */,
+				211512B52204494700D181BC /* NSObject+MJCoding.m */,
+				211512B62204494700D181BC /* NSObject+MJKeyValue.h */,
+				211512B72204494700D181BC /* NSObject+MJKeyValue.m */,
+				211512B82204494700D181BC /* NSObject+MJProperty.h */,
+				211512B92204494700D181BC /* NSObject+MJProperty.m */,
+				211512BA2204494700D181BC /* NSString+MJExtension.h */,
+				211512BB2204494700D181BC /* NSString+MJExtension.m */,
+			);
+			name = MJExtension;
+			path = HttpSimpleDemo/MJExtension;
+			sourceTree = "<group>";
+		};
 		211F60D8220325F300A3A596 = {
 			isa = PBXGroup;
 			children = (
 				211F60E3220325F300A3A596 /* HttpSimpleDemo */,
 				211F60E2220325F300A3A596 /* Products */,
+				211512A42204494700D181BC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};

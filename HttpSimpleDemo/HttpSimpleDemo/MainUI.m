@@ -19,6 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"天气查询";
+    
 }
 
 - (IBAction)pressSearchBtn:(id)sender {
