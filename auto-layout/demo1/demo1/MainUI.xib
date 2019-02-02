@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainUI">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t92-6c-lID" userLabel="View1">
+                    <rect key="frame" x="20" y="592" width="157.5" height="55"/>
+                    <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="Wos-Yb-Qtm"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qr6-gh-9Tt" userLabel="View2">
+                    <rect key="frame" x="197.5" y="592" width="157.5" height="55"/>
+                    <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="qr6-gh-9Tt" firstAttribute="leading" secondItem="t92-6c-lID" secondAttribute="trailing" constant="20" id="2We-eX-QKF"/>
+                <constraint firstItem="t92-6c-lID" firstAttribute="top" secondItem="qr6-gh-9Tt" secondAttribute="top" id="3Pl-Ua-TIc"/>
+                <constraint firstAttribute="bottom" secondItem="t92-6c-lID" secondAttribute="bottom" constant="20" symbolic="YES" id="LAh-Tr-fpa"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="qr6-gh-9Tt" secondAttribute="trailing" constant="20" id="Qf3-Wz-apE"/>
+                <constraint firstItem="qr6-gh-9Tt" firstAttribute="leading" secondItem="t92-6c-lID" secondAttribute="trailing" constant="20" id="UIF-m3-EG8"/>
+                <constraint firstItem="t92-6c-lID" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="Vvf-M7-zgb"/>
+                <constraint firstItem="qr6-gh-9Tt" firstAttribute="width" secondItem="t92-6c-lID" secondAttribute="width" id="x4K-Sq-zfk"/>
+                <constraint firstItem="qr6-gh-9Tt" firstAttribute="height" secondItem="t92-6c-lID" secondAttribute="height" id="zhD-aN-XXY"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+</document>
