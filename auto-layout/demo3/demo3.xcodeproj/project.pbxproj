@@ -13,6 +13,8 @@
 		21DA61762205E24700D0FA90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21DA61752205E24700D0FA90 /* Assets.xcassets */; };
 		21DA61792205E24700D0FA90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21DA61772205E24700D0FA90 /* LaunchScreen.storyboard */; };
 		21DA617C2205E24700D0FA90 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 21DA617B2205E24700D0FA90 /* main.m */; };
+		21DA61852205E25F00D0FA90 /* MainUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 21DA61832205E25F00D0FA90 /* MainUI.m */; };
+		21DA61862205E25F00D0FA90 /* MainUI.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21DA61842205E25F00D0FA90 /* MainUI.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,9 @@
 		21DA61782205E24700D0FA90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		21DA617A2205E24700D0FA90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		21DA617B2205E24700D0FA90 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		21DA61822205E25F00D0FA90 /* MainUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainUI.h; sourceTree = "<group>"; };
+		21DA61832205E25F00D0FA90 /* MainUI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainUI.m; sourceTree = "<group>"; };
+		21DA61842205E25F00D0FA90 /* MainUI.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainUI.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +72,9 @@
 				21DA61772205E24700D0FA90 /* LaunchScreen.storyboard */,
 				21DA617A2205E24700D0FA90 /* Info.plist */,
 				21DA617B2205E24700D0FA90 /* main.m */,
+				21DA61822205E25F00D0FA90 /* MainUI.h */,
+				21DA61832205E25F00D0FA90 /* MainUI.m */,
+				21DA61842205E25F00D0FA90 /* MainUI.xib */,
 			);
 			path = demo3;
 			sourceTree = "<group>";
@@ -131,6 +139,7 @@
 			files = (
 				21DA61792205E24700D0FA90 /* LaunchScreen.storyboard in Resources */,
 				21DA61762205E24700D0FA90 /* Assets.xcassets in Resources */,
+				21DA61862205E25F00D0FA90 /* MainUI.xib in Resources */,
 				21DA61742205E24700D0FA90 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -144,6 +153,7 @@
 			files = (
 				21DA61712205E24700D0FA90 /* ViewController.m in Sources */,
 				21DA617C2205E24700D0FA90 /* main.m in Sources */,
+				21DA61852205E25F00D0FA90 /* MainUI.m in Sources */,
 				21DA616E2205E24700D0FA90 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
