@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+            <title>hello</title>
+            <style type="text/css">
+                #container{
+                    width: 100%;
+                    height: 300px;
+                    background: #eee;
+                    margin-bottom: 15px;
+                }
+            </style>
+    </head>
+    <body>
+        
+        <div id="container"></div>
+        
+        <div>
+            <button onclick="javascript: document.getElementById('container').style.backgroundColor = '#eee';">恢复页面背景</button>
+            <button onclick="sayHello();">JS调用原生</button>
+        </div>
+        
+        <script type="text/javascript">
+            
+            function changeColor(){
+                document.getElementById('container').style.backgroundColor = '#f00';
+            }
+            
+            function sayHello(){
+                window.webkit.messageHandlers.sayHello.postMessage({
+                    date: '2019-02-12',
+                    mood: 'best',
+                    good: true
+                                                                   
+                });
+            }
+            function hello(){
+                alert('hello');
+            }
+        </script>
+    </body>
+    
+</html>
