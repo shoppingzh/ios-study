@@ -110,7 +110,10 @@
 }
 
 
-
+- (void)dealloc{
+    // 移除监听器
+    [_webView removeObserver:self forKeyPath:@"estimatedProgress"];
+}
 
 
 @end
