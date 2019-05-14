@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileTableViewCell"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="168" id="JeI-3Y-ZCx" customClass="ProfileTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="413" height="168"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JeI-3Y-ZCx" id="8aA-Be-53M">
+                <rect key="frame" x="0.0" y="0.0" width="413" height="167.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="4Jv-ZU-ORQ">
+                        <rect key="frame" x="35" y="54" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="ff0-0p-qW0"/>
+                            <constraint firstAttribute="width" constant="60" id="x6i-bi-5uX"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="爹" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8gK-i1-oh3">
+                        <rect key="frame" x="110" y="59" width="283" height="19.5"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="微信号：zxpwsygsg_199509" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jz9-dE-6He">
+                        <rect key="frame" x="110" y="94.5" width="283" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qrcode" translatesAutoresizingMaskIntoConstraints="NO" id="Xi4-BH-2pC">
+                        <rect key="frame" x="348" y="74" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="IWD-dt-C0u"/>
+                            <constraint firstAttribute="width" constant="20" id="hnw-JP-Taa"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Xi4-BH-2pC" firstAttribute="centerY" secondItem="4Jv-ZU-ORQ" secondAttribute="centerY" id="61b-LL-yRa"/>
+                    <constraint firstItem="8gK-i1-oh3" firstAttribute="leading" secondItem="4Jv-ZU-ORQ" secondAttribute="trailing" constant="15" id="DzJ-cJ-Ggy"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="8gK-i1-oh3" secondAttribute="trailing" id="Zib-DL-UtP"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Jz9-dE-6He" secondAttribute="trailing" id="agk-OW-SOl"/>
+                    <constraint firstItem="Jz9-dE-6He" firstAttribute="leading" secondItem="4Jv-ZU-ORQ" secondAttribute="trailing" constant="15" id="d4H-Be-i7n"/>
+                    <constraint firstItem="8gK-i1-oh3" firstAttribute="top" secondItem="4Jv-ZU-ORQ" secondAttribute="top" constant="5" id="hlQ-MY-0Hl"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Xi4-BH-2pC" secondAttribute="trailing" constant="25" id="oh8-PU-ijZ"/>
+                    <constraint firstItem="4Jv-ZU-ORQ" firstAttribute="leading" secondItem="8aA-Be-53M" secondAttribute="leadingMargin" constant="15" id="rAp-eu-uOG"/>
+                    <constraint firstItem="Jz9-dE-6He" firstAttribute="bottom" secondItem="4Jv-ZU-ORQ" secondAttribute="bottom" constant="-5" id="xPf-uT-i0w"/>
+                    <constraint firstItem="4Jv-ZU-ORQ" firstAttribute="centerY" secondItem="8aA-Be-53M" secondAttribute="centerY" id="yOq-V3-PgN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="41.5" y="134"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="avatar" width="960" height="960"/>
+        <image name="qrcode" width="16" height="16"/>
+    </resources>
+</document>

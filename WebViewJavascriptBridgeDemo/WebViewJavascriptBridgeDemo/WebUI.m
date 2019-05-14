@@ -31,8 +31,12 @@
         if([data isKindOfClass:[NSDictionary class]]){
             NSDictionary *dicData =  data;
             name = [dicData valueForKey:@"name"];
+        }
+        
+        if([data respondsToSelector:@selector(description)]){
             
         }
+        
         [self alert: [@"Hello, " stringByAppendingString:name]];
     }];
     [_bridge registerHandler:@"backgroundColorChanged" handler:^(id data, WVJBResponseCallback responseCallback) {
