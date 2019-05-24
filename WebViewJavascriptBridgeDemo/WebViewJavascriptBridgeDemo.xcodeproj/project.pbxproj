@@ -17,10 +17,7 @@
 		2130F1A32212803600DB4270 /* WebUI.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2130F1A12212803600DB4270 /* WebUI.xib */; };
 		2130F1A822128A5000DB4270 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2130F1A722128A5000DB4270 /* WebKit.framework */; };
 		2130F1AA2212A30700DB4270 /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = 2130F1A92212A30600DB4270 /* test.html */; };
-		2130F1B42212A4AB00DB4270 /* WebViewJavascriptBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 2130F1AD2212A4AB00DB4270 /* WebViewJavascriptBridge.m */; };
-		2130F1B52212A4AB00DB4270 /* WebViewJavascriptBridge_JS.m in Sources */ = {isa = PBXBuildFile; fileRef = 2130F1AF2212A4AB00DB4270 /* WebViewJavascriptBridge_JS.m */; };
-		2130F1B62212A4AB00DB4270 /* WebViewJavascriptBridgeBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 2130F1B12212A4AB00DB4270 /* WebViewJavascriptBridgeBase.m */; };
-		2130F1B72212A4AB00DB4270 /* WKWebViewJavascriptBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 2130F1B32212A4AB00DB4270 /* WKWebViewJavascriptBridge.m */; };
+		95773A64292F3448B7C69227 /* libPods-WebViewJavascriptBridgeDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 61D89A97028906E243AEFC6E /* libPods-WebViewJavascriptBridgeDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,14 +37,9 @@
 		2130F1A52212875900DB4270 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		2130F1A722128A5000DB4270 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		2130F1A92212A30600DB4270 /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
-		2130F1AC2212A4AB00DB4270 /* WebViewJavascriptBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewJavascriptBridge.h; sourceTree = "<group>"; };
-		2130F1AD2212A4AB00DB4270 /* WebViewJavascriptBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewJavascriptBridge.m; sourceTree = "<group>"; };
-		2130F1AE2212A4AB00DB4270 /* WebViewJavascriptBridge_JS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewJavascriptBridge_JS.h; sourceTree = "<group>"; };
-		2130F1AF2212A4AB00DB4270 /* WebViewJavascriptBridge_JS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewJavascriptBridge_JS.m; sourceTree = "<group>"; };
-		2130F1B02212A4AB00DB4270 /* WebViewJavascriptBridgeBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewJavascriptBridgeBase.h; sourceTree = "<group>"; };
-		2130F1B12212A4AB00DB4270 /* WebViewJavascriptBridgeBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewJavascriptBridgeBase.m; sourceTree = "<group>"; };
-		2130F1B22212A4AB00DB4270 /* WKWebViewJavascriptBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKWebViewJavascriptBridge.h; sourceTree = "<group>"; };
-		2130F1B32212A4AB00DB4270 /* WKWebViewJavascriptBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKWebViewJavascriptBridge.m; sourceTree = "<group>"; };
+		61D89A97028906E243AEFC6E /* libPods-WebViewJavascriptBridgeDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WebViewJavascriptBridgeDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB9F3176446BF462ACD580E3 /* Pods-WebViewJavascriptBridgeDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebViewJavascriptBridgeDemo.debug.xcconfig"; path = "Target Support Files/Pods-WebViewJavascriptBridgeDemo/Pods-WebViewJavascriptBridgeDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		EB9101B0473974E47EFD599B /* Pods-WebViewJavascriptBridgeDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebViewJavascriptBridgeDemo.release.xcconfig"; path = "Target Support Files/Pods-WebViewJavascriptBridgeDemo/Pods-WebViewJavascriptBridgeDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +48,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2130F1A822128A5000DB4270 /* WebKit.framework in Frameworks */,
+				95773A64292F3448B7C69227 /* libPods-WebViewJavascriptBridgeDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +61,7 @@
 				2130F1882212801B00DB4270 /* WebViewJavascriptBridgeDemo */,
 				2130F1872212801B00DB4270 /* Products */,
 				2130F1A42212875900DB4270 /* Frameworks */,
+				679FDDD910160B3A19F7B392 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,7 +76,6 @@
 		2130F1882212801B00DB4270 /* WebViewJavascriptBridgeDemo */ = {
 			isa = PBXGroup;
 			children = (
-				2130F1AB2212A4AB00DB4270 /* WebViewJavascriptBridge */,
 				2130F1892212801B00DB4270 /* AppDelegate.h */,
 				2130F18A2212801B00DB4270 /* AppDelegate.m */,
 				2130F18C2212801B00DB4270 /* ViewController.h */,
@@ -105,23 +98,18 @@
 			children = (
 				2130F1A722128A5000DB4270 /* WebKit.framework */,
 				2130F1A52212875900DB4270 /* JavaScriptCore.framework */,
+				61D89A97028906E243AEFC6E /* libPods-WebViewJavascriptBridgeDemo.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		2130F1AB2212A4AB00DB4270 /* WebViewJavascriptBridge */ = {
+		679FDDD910160B3A19F7B392 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				2130F1AC2212A4AB00DB4270 /* WebViewJavascriptBridge.h */,
-				2130F1AD2212A4AB00DB4270 /* WebViewJavascriptBridge.m */,
-				2130F1AE2212A4AB00DB4270 /* WebViewJavascriptBridge_JS.h */,
-				2130F1AF2212A4AB00DB4270 /* WebViewJavascriptBridge_JS.m */,
-				2130F1B02212A4AB00DB4270 /* WebViewJavascriptBridgeBase.h */,
-				2130F1B12212A4AB00DB4270 /* WebViewJavascriptBridgeBase.m */,
-				2130F1B22212A4AB00DB4270 /* WKWebViewJavascriptBridge.h */,
-				2130F1B32212A4AB00DB4270 /* WKWebViewJavascriptBridge.m */,
+				DB9F3176446BF462ACD580E3 /* Pods-WebViewJavascriptBridgeDemo.debug.xcconfig */,
+				EB9101B0473974E47EFD599B /* Pods-WebViewJavascriptBridgeDemo.release.xcconfig */,
 			);
-			path = WebViewJavascriptBridge;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,6 +119,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2130F19C2212801B00DB4270 /* Build configuration list for PBXNativeTarget "WebViewJavascriptBridgeDemo" */;
 			buildPhases = (
+				32DCA028B4083DEF8BF86E3B /* [CP] Check Pods Manifest.lock */,
 				2130F1822212801B00DB4270 /* Sources */,
 				2130F1832212801B00DB4270 /* Frameworks */,
 				2130F1842212801B00DB4270 /* Resources */,
@@ -192,6 +181,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		32DCA028B4083DEF8BF86E3B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WebViewJavascriptBridgeDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2130F1822212801B00DB4270 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -199,12 +213,8 @@
 			files = (
 				2130F18E2212801B00DB4270 /* ViewController.m in Sources */,
 				2130F1992212801B00DB4270 /* main.m in Sources */,
-				2130F1B52212A4AB00DB4270 /* WebViewJavascriptBridge_JS.m in Sources */,
 				2130F1A22212803600DB4270 /* WebUI.m in Sources */,
-				2130F1B62212A4AB00DB4270 /* WebViewJavascriptBridgeBase.m in Sources */,
-				2130F1B72212A4AB00DB4270 /* WKWebViewJavascriptBridge.m in Sources */,
 				2130F18B2212801B00DB4270 /* AppDelegate.m in Sources */,
-				2130F1B42212A4AB00DB4270 /* WebViewJavascriptBridge.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,6 +346,7 @@
 		};
 		2130F19D2212801B00DB4270 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB9F3176446BF462ACD580E3 /* Pods-WebViewJavascriptBridgeDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -351,6 +362,7 @@
 		};
 		2130F19E2212801B00DB4270 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB9101B0473974E47EFD599B /* Pods-WebViewJavascriptBridgeDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
