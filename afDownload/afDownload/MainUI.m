@@ -6,8 +6,11 @@
 //
 
 #import "MainUI.h"
+#import "HttpUtil.h"
 
 @interface MainUI ()
+
+@property (weak, nonatomic) IBOutlet UITextField *sourceTf;
 
 @end
 
@@ -15,17 +18,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (IBAction)download:(id)sender {
+    NSURL *destination = [[NSFileManager defaultManager] URLForDirectory:NSDocumentDirectory inDomain:NSUserDomainMask appropriateForURL:nil create:YES error:nil];
+    [HttpUtil download:_sourceTf.text destination:^NSURL * _Nonnull(NSURL * _Nonnull targetPath, NSURLResponse * _Nonnull response) {
+        return [destination URLByAppendingPathComponent:response.suggestedFilename];
+    } progress:^(NSProgress * _Nonnull downloadProgress) {
+        NSLog(@"当前进度：%@", downloadProgress);
+    } completion:^(NSURLResponse * _Nonnull response, NSURL * _Nonnull filePath, NSError * _Nonnull error) {
+        NSLog(@"filePath: %@", filePath);
+        NSLog(@"response: %@", response);
+        NSLog(@"error: %@", error);
+    }];
+    
 }
-*/
 
 @end
