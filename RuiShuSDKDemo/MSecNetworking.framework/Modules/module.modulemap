@@ -1,0 +1,6 @@
+framework module MSecNetworking {
+  umbrella header "MSecNetworking.h"
+
+  export *
+  module * { export * }
+}
